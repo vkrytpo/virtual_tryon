@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="gr__ornaz_com"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="index_files/icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="index_files/index.css">
+<body>
+   <div class="splash">
+      <!-- alert page. view.  patriot rotate alert....-->
+      <div class="rotatealert" style="display: none;">
+          <center> <h4> Please Rotate your device</h4></center>
+      </div>
+			<!-- first page.. demo.. intro..-->
+			<div class="tr demo" style="z-index:9;background-color:white;">
+				<div class="add-photo-container--3V52b">
+					<div class="background-image"></div>
+					<div style="position:relative;width: 100%;padding-top: 20px;padding-left: 30px;margin-bottom: 10px;">
+						<a href="/" style="padding: 10px;text-decoration: none;color: white;">
+							<i class="material-icons">arrow_back_ios</i>
+						</a>
+					</div>
+					<div style="position:relative; text-align:center; width: 100%;font-family: roboto;">
+						<div style="font-size: 25px;line-height: 30px;">Add a Photo of Your Hand</div>
+						<div>(if you are wearing a ring please take it off) </div>
+					</div>
+					<div style="width: 100%;position: absolute;bottom: 40px;height: 60px;text-align: center;padding: 0px 60px;font-size: 18px;margin: auto;">
+						<div style="padding: 10px;background-color: #eadbdb;color: black;border: 1px solid gray;">
+							<div style="margin: 10px;cursor:pointer">
+								<input type="file" id="inputimage" accept="image/*" style="display:none;">
+								<label for="inputimage"><span style=""> ADD A PHOTO </span></label>
+							</div>
+					 </div>
+				 </div>
+				</div>
+			</div>
+			<!-- Ring static tryon view -->
+			<div class="tr tryon_view" style="display: none;">
+				
+				<div class="tryon-designs" style="z-index:5;">
+					<ul class="images">
+						<li><img class="try_on_image_list" src="index_files/images/ring_1.png" style="height:100%"></li>			
+						<li><img class="try_on_image_list" src="index_files/images/ring_2.png" style="height:100%"></li>			
+						<li><img class="try_on_image_list" src="index_files/images/ring_3.png" style="height:100%"></li>			
+						<li><img class="try_on_image_list" src="index_files/images/ring_4.png" style="height:100%"></li>			
+						<li><img class="try_on_image_list" src="index_files/images/ring_5.png" style="height:100%"></li>			
+						<li><img class="try_on_image_list" src="index_files/images/ring_6.png" style="height:100%"></li>			
+					</ul>
+				</div>
+				
+				<div id="capture">
+					<div class="device-screen-wrapper">
+						<div id="hitarea" class="animate" style="position: absolute; width: 100%; overflow: hidden; border: 0px solid red; touch-action: none; transform: translate3d(0px, 0px, 0px) scale(1) rotate3d(0, 0, 0, 0deg); -moz-user-select: none;">
+							<img class="current_ring disableSave" style="padding:40%;" src="index_files/images/ring_1.png">
+						</div>
+                        <canvas id="myCanvas"></canvas>
+				 		<img class="device-screen disableSave" style="display:none;" id="myImg" src1="https://d3rodw1h7g0i9b.cloudfront.net/js/hammerjs/img.png"> 
+					</div>
+				</div>
+				<div class="bottom-actions">
+					<ul class="actions">
+						<li>
+							<input type="file" id="inputimage" accept="image/*" style="display:none;">
+							<label for="inputimage"><i class="material-icons">add_a_photo</i></label>
+					  </li>
+					  <li class="toCanvas"><i class="material-icons">arrow_downward</i></li>
+					  <li><i class="material-icons">share</i></li>
+						<!--
+					  <li ><i class="material-icons">attach_file</i></li>
+						<li ><a href="/"><i class="material-icons">send</i></a></li>-->
+					  <li><a href="https://www.ornaz.com/"><i class="material-icons">home</i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    <script src="index_files/jquery.js"></script>
+    <script src="index_files/hammer.js"></script>
+    <script src="index_files/exif.js"></script>
+    <script src="index_files/index.js"></script>
+    <script src="index_files/script.js"></script>
+    <script src="index_files/html2canvas.js"></script>
+    <script src="index_files/canvas2image.js"></script>    
+</body></html>
